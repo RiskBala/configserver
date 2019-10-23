@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: file:///D:/configprop
+          uri: https://github.com/RiskBala/configprop.git
           clone-on-start: false
           force-pull: true
           search-paths: '{application}'
@@ -23,4 +23,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      defaultZone: http://travel-management-eureka-server:8761/eureka
