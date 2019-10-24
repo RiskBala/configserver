@@ -16,6 +16,14 @@ spring:
     user:
       name: root
       password: root
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always      
 eureka:
   instance:
     preferIpAddress: true
